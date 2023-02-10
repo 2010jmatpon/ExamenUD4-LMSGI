@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejercicio1 SYSTEM "ejercicio1.dtd">
+<ejercicio1>
+    <sucursal codigo="H8690398">
+        <nombre>Francisco Garcia</nombre>
+        <fecha_pedido>17-05-2007</fecha_pedido>
+        <observaciones>Urgente</observaciones>
+        <articulo cod="JHD-849">
+            <unidades>2</unidades>
+            <precio>27'95€</precio>
+            <plazo_revision>15-07-2007</plazo_revision>
+        </articulo>
+    </sucursal>
+</ejercicio1>

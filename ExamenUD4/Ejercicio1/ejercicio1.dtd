@@ -1,0 +1,11 @@
+<!ELEMENT ejercicio1 (sucursal*)>
+<!ELEMENT sucursal (nombre, fecha_pedido, observaciones, articulo)>
+    <!ATTLIST sucursal codigo CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fecha_pedido (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT articulo (unidades, precio, plazo_revision)>
+    <!ATTLIST articulo cod CDATA #REQUIRED>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT plazo_revision (#PCDATA)>

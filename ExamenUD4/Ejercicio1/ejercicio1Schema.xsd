@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ejercicio1" />
+    <xs:complexType name="sucursales">
+        <xs:sequence>
+            <xs:element name="sucursal" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="fecha_pedido" type="xs:string"/>
+                        <xs:element name="observaciones" type="xs:string"/>
+                        <xs:element name="articulo" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="unidades" type="xs:string"/>
+                                    <xs:element name="precio" type="xs:string"/>
+                                    <xs:element name="plazo_revision" type="xs:string"/>
+                                </xs:sequence>
+                                <xs:attribute name="cod" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="codigo" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="codigo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z]{1} 0-9){8}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cod">
+        <xs:restriction base="xs:string"></xs:restriction>
+    </xs:simpleType>
+</xs:schema>

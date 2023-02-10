@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejercicio1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio1Schema.xsd">
+    <sucursal codigo="H8690398">
+        <nombre>Francisco Garcia</nombre>
+        <fecha_pedido>17-05-2007</fecha_pedido>
+        <observaciones>Urgente</observaciones>
+        <articulo cod="JHD-849">
+            <unidades></unidades>
+            <precio></precio>
+            <plazo_revision></plazo_revision>
+        </articulo>
+    </sucursal>
+</ejercicio1>
